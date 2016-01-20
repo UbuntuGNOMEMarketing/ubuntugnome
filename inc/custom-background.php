@@ -15,7 +15,7 @@ function magik_custom_background_setup() {
 	add_theme_support(
 		'custom-background',
 		array(
-			'default-color'    => 'eeeeee',
+			'default-color'    => 'ffffff',
 			'default-image'    => '',
 			'wp-head-callback' => 'magik_custom_background_callback',
 		)

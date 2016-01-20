@@ -9,6 +9,7 @@
 			<div class="entry-byline">
 				<span <?php hybrid_attr( 'entry-author' ); ?>><?php the_author_posts_link(); ?></span>
 				<time <?php hybrid_attr( 'entry-published' ); ?>><?php echo get_the_date(); ?></time>
+				<?php hybrid_post_terms( array( 'taxonomy' => 'category', 'text' => esc_html__( '%s', 'magik' ) ) ); ?>
 				<?php comments_popup_link( number_format_i18n( 0 ), number_format_i18n( 1 ), '%', 'comments-link', '' ); ?>
 				<?php edit_post_link(); ?>
 			</div><!-- .entry-byline -->
@@ -21,7 +22,6 @@
 		</div><!-- .entry-content -->
 
 		<footer class="entry-footer">
-			<?php hybrid_post_terms( array( 'taxonomy' => 'category', 'text' => esc_html__( 'Posted in %s', 'magik' ) ) ); ?>
 			<?php hybrid_post_terms( array( 'taxonomy' => 'post_tag', 'text' => esc_html__( 'Tagged %s', 'magik' ) ) ); ?>
 		</footer><!-- .entry-footer -->
 
@@ -34,6 +34,7 @@
 			<div class="entry-byline">
 				<span <?php hybrid_attr( 'entry-author' ); ?>><?php the_author_posts_link(); ?></span>
 				<time <?php hybrid_attr( 'entry-published' ); ?>><?php echo get_the_date(); ?></time>
+				<?php hybrid_post_terms( array( 'taxonomy' => 'category', 'text' => esc_html__( '%s', 'magik' ) ) ); ?>
 				<?php comments_popup_link( number_format_i18n( 0 ), number_format_i18n( 1 ), '%', 'comments-link', '' ); ?>
 				<?php edit_post_link(); ?>
 			</div><!-- .entry-byline -->
@@ -44,9 +45,8 @@
 			<?php get_the_image(); ?>
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->
-		
+
 		<footer class="entry-footer">
-			<?php hybrid_post_terms( array( 'taxonomy' => 'category', 'text' => esc_html__( 'Posted in %s', 'magik' ) ) ); ?>
 			<?php hybrid_post_terms( array( 'taxonomy' => 'post_tag', 'text' => esc_html__( 'Tagged %s', 'magik' ) ) ); ?>
 		</footer><!-- .entry-footer -->
 
