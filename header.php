@@ -13,19 +13,23 @@
 			<a href="#content" class="screen-reader-text"><?php esc_html_e( 'Skip to content', 'magik' ); ?></a>
 		</div><!-- .skip-link -->
 
-		<header <?php hybrid_attr( 'header' ); ?>>
+			<div class="header-image-container">
 
-			<div class="wrap">
+				<header <?php hybrid_attr( 'header' ); ?>>
 
-				<div <?php hybrid_attr( 'branding' ); ?>>
-					<?php hybrid_site_title(); ?>
-					<?php hybrid_site_description(); ?>
-				</div><!-- #branding -->
+					<div class="wrap">
 
-				<?php hybrid_get_menu( 'primary' ); // Loads the menu/secondary.php template. ?>
+						<div <?php hybrid_attr( 'branding' ); ?>>
+							<?php hybrid_site_title(); ?>
+							<?php hybrid_site_description(); ?>
+						</div><!-- #branding -->
 
-			</div><!-- wrap -->
-		</header><!-- #header -->
+						<?php hybrid_get_menu( 'primary' ); // Loads the menu/secondary.php template. ?>
+
+					</div><!-- wrap -->
+				</header><!-- #header -->
+
+			</div> <!-- .header-image-container -->
 
 		<div id="main" class="main">
 			<div class="wrap">

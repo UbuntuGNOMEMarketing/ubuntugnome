@@ -17,8 +17,8 @@ function magik_custom_header_setup() {
 		array(
 			'default-image'          => '',
 			'random-default'         => false,
-			'width'                  => 600,
-			'height'                 => 128,
+			'width'                  => 1600,
+			'height'                 => 400,
 			'flex-height'            => true,
 			'header-text'            => false,
 			'uploads'                => true,
