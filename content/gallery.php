@@ -28,7 +28,9 @@
 
 	<?php else : // If not viewing a single post. ?>
 
-		<?php get_the_image(); ?>
+		<div class="wrap">
+			<?php get_the_image(); ?>
+		</div>
 
 		<header class="entry-header">
 

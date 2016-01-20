@@ -1,18 +1,21 @@
 <article <?php hybrid_attr( 'post' ); ?>>
 
-	<?php if ( is_attachment() ) : // If viewing a single attachment. ?>
+	<div class="wrap">
+		<?php if ( is_attachment() ) : // If viewing a single attachment. ?>
 
-		<?php if ( has_excerpt() ) : // If the image has an excerpt/caption. ?>
+			<?php if ( has_excerpt() ) : // If the image has an excerpt/caption. ?>
 
-			<?php $src = wp_get_attachment_image_src( get_the_ID(), 'full' ); ?>
+				<?php $src = wp_get_attachment_image_src( get_the_ID(), 'full' ); ?>
 
-			<?php echo img_caption_shortcode( array( 'align' => 'aligncenter', 'width' => esc_attr( $src[1] ), 'caption' => get_the_excerpt() ), wp_get_attachment_image( get_the_ID(), 'full', false ) ); ?>
+				<?php echo img_caption_shortcode( array( 'align' => 'aligncenter', 'width' => esc_attr( $src[1] ), 'caption' => get_the_excerpt() ), wp_get_attachment_image( get_the_ID(), 'full', false ) ); ?>
 
-		<?php else : // If the image doesn't have a caption. ?>
+			<?php else : // If the image doesn't have a caption. ?>
 
-			<?php echo wp_get_attachment_image( get_the_ID(), 'full', false, array( 'class' => 'aligncenter' ) ); ?>
+				<?php echo wp_get_attachment_image( get_the_ID(), 'full', false, array( 'class' => 'aligncenter' ) ); ?>
 
-		<?php endif; // End check for image caption. ?>
+			<?php endif; // End check for image caption. ?>
+
+		</div>
 
 		<header class="entry-header">
 
@@ -36,7 +39,9 @@
 
 	<?php else : // If not viewing a single post. ?>
 
-		<?php get_the_image(); ?>
+		<div class="wrap">
+			<?php get_the_image(); ?>
+		</div>
 
 		<header class="entry-header">
 			<?php the_title( '<h2 ' . hybrid_get_attr( 'entry-title' ) . '><a href="' . get_permalink() . '" rel="bookmark" itemprop="url">', '</a></h2>' ); ?>

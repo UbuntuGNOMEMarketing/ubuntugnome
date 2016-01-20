@@ -32,6 +32,5 @@
 			</div> <!-- .header-image-container -->
 
 		<div id="main" class="main">
-			<div class="wrap">
 
 			<?php hybrid_get_menu( 'breadcrumbs' ); // Loads the menu/breadcrumbs.php template. ?>

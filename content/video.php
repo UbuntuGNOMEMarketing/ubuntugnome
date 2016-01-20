@@ -1,6 +1,8 @@
 <article <?php hybrid_attr( 'post' ); ?>>
 
-	<?php echo ( $video = hybrid_media_grabber( array( 'type' => 'video', 'split_media' => true ) ) ); ?>
+	<div class="wrap">
+		<?php echo ( $video = hybrid_media_grabber( array( 'type' => 'video', 'split_media' => true ) ) ); ?>
+	</div>
 
 	<?php if ( is_singular( get_post_type() ) ) : // If viewing a single post. ?>
 
