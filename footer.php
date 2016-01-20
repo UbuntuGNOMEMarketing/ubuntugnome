@@ -1,4 +1,3 @@
-			<?php hybrid_get_sidebar( 'primary' ); // Loads the sidebar/primary.php template. ?>
 			</div><!-- .wrap -->
 		</div><!-- #main -->
 
@@ -14,7 +13,7 @@
 				); ?>
 			</p><!-- .credit -->
 			<p class="credit">
-				<?php 
+				<?php
 				echo __( 'Built with <big>&hearts;</big> at <a href="https://magikpress.com">MagikPress</a>', 'magik' );
 				?>
 			</p>

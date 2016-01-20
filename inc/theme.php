@@ -51,9 +51,7 @@ function magik_register_menus() {
  */
 function magik_register_layouts() {
 
-	hybrid_register_layout( '1c',   array( 'label' => esc_html__( '1 Column',                     'magik' ), 'image' => '%s/images/layouts/1c.png'   ) );
-	hybrid_register_layout( '2c-l', array( 'label' => esc_html__( '2 Columns: Content / Sidebar', 'magik' ), 'image' => '%s/images/layouts/2c-l.png' ) );
-	hybrid_register_layout( '2c-r', array( 'label' => esc_html__( '2 Columns: Sidebar / Content', 'magik' ), 'image' => '%s/images/layouts/2c-r.png' ) );
+	hybrid_register_layout( '1c',   array( 'label' => esc_html__( '1 Column', 'magik' ), 'image' => '%s/images/layouts/1c.png'   ) );
 }
 
 /**
@@ -64,14 +62,6 @@ function magik_register_layouts() {
  * @return void
  */
 function magik_register_sidebars() {
-
-	hybrid_register_sidebar(
-		array(
-			'id'          => 'primary',
-			'name'        => esc_html_x( 'Primary', 'sidebar', 'magik' ),
-			'description' => esc_html__( 'Add sidebar description.', 'magik' )
-		)
-	);
 
 	hybrid_register_sidebar(
 		array(
