@@ -1,8 +1,6 @@
 			</div><!-- .wrap -->
 		</div><!-- #main -->
 
-		<?php hybrid_get_sidebar( 'footer' ); // Loads the sidebar/subsidiary.php template. ?>
-
 		<footer <?php hybrid_attr( 'footer' ); ?>>
 
 			<p class="credit">

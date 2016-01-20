@@ -62,29 +62,6 @@ function magik_register_layouts() {
  */
 function magik_register_sidebars() {
 
-	hybrid_register_sidebar(
-		array(
-			'id'          => 'footer-1',
-			'name'        => esc_html_x( 'Footer 1', 'sidebar', 'magik' ),
-			'description' => esc_html__( 'Add sidebar description.', 'magik' )
-		)
-	);
-
-	hybrid_register_sidebar(
-		array(
-			'id'          => 'footer-2',
-			'name'        => esc_html_x( 'Footer 2', 'sidebar', 'magik' ),
-			'description' => esc_html__( 'Add sidebar description.', 'magik' )
-		)
-	);
-
-	hybrid_register_sidebar(
-		array(
-			'id'          => 'footer-3',
-			'name'        => esc_html_x( 'Footer 3', 'sidebar', 'magik' ),
-			'description' => esc_html__( 'Add sidebar description.', 'magik' )
-		)
-	);
 }
 
 /**
@@ -95,6 +72,10 @@ function magik_register_sidebars() {
  * @return void
  */
 function magik_enqueue_scripts() {
+
+	wp_enqueue_script( 'ug-backstretch', get_template_directory_uri() . '/js/backstretch.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'ug-backstretch-set', get_template_directory_uri() . '/js/backstretch-set.js' , array( 'jquery', 'ug-backstretch' ), '1.0.0', true );
+
 }
 
 /**

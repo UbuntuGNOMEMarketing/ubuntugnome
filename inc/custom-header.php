@@ -41,8 +41,11 @@ function magik_custom_header_wp_head() {
 
 	$header_image = get_header_image();
 
-	$style = "body.custom-header #branding {  }";
+	/*$style = "body.custom-header #branding {  }";
 	$style = sprintf( 'body.custom-header #branding { background: url(%1$s) center center no-repeat !important; text-indent: -9999px;background-size: %2$dpx %3$dpx !important; min-height: %3$dpx}', esc_url( $header_image ), absint( get_custom_header()->width / 2 ), absint( get_custom_header()->height / 2 ) );
 
-	echo "\n" . '<style type="text/css" id="custom-header-css">' . trim( $style ) . '</style>' . "\n";
+	echo "\n" . '<style type="text/css" id="custom-header-css">' . trim( $style ) . '</style>' . "\n";*/
+
+	$image = array( 'src' => $header_image );
+	wp_localize_script( 'ug-backstretch-set', 'BackStretchImg', $image );
 }
