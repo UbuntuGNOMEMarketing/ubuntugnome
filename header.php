@@ -21,13 +21,11 @@
 					<?php hybrid_site_title(); ?>
 					<?php hybrid_site_description(); ?>
 				</div><!-- #branding -->
-				
-				<?php hybrid_get_menu( 'secondary' ); // Loads the menu/secondary.php template. ?>
+
+				<?php hybrid_get_menu( 'primary' ); // Loads the menu/secondary.php template. ?>
 
 			</div><!-- wrap -->
 		</header><!-- #header -->
-		
-		<?php hybrid_get_menu( 'primary' ); // Loads the menu/primary.php template. ?>
 
 		<div id="main" class="main">
 			<div class="wrap">
