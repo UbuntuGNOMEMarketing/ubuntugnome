@@ -9,7 +9,9 @@
 				'menu_id'         => 'menu-subsidiary-items',
 				'menu_class'      => 'menu-items',
 				'fallback_cb'     => '',
-				'items_wrap'      => '<div class="wrap"><ul id="%s" class="%s">%s</ul></div>'
+				'items_wrap'      => '<ul id="%s" class="%s">%s</ul>',
+				'link_before'     => '<span class="screen-reader-text">',
+				'link_after'      => '</span>',
 			)
 		); ?>
 
