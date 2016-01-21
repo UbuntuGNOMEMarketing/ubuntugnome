@@ -21,10 +21,6 @@
 			<?php wp_link_pages(); ?>
 		</div><!-- .entry-content -->
 
-		<footer class="entry-footer">
-			<?php hybrid_post_terms( array( 'taxonomy' => 'post_tag', 'text' => esc_html__( 'Tagged %s', 'magik' ) ) ); ?>
-		</footer><!-- .entry-footer -->
-
 	<?php else : // If not viewing a single post. ?>
 
 		<header class="entry-header">
@@ -45,10 +41,6 @@
 			<?php get_the_image(); ?>
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->
-
-		<footer class="entry-footer">
-			<?php hybrid_post_terms( array( 'taxonomy' => 'post_tag', 'text' => esc_html__( 'Tagged %s', 'magik' ) ) ); ?>
-		</footer><!-- .entry-footer -->
 
 	<?php endif; // End single post check. ?>
 

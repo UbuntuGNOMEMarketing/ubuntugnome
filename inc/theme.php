@@ -105,7 +105,7 @@ function magik_enqueue_styles() {
 	wp_enqueue_style( 'hybrid-style' );
 
 	wp_enqueue_style( 'dashicons' );
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Dancing+Script|Lato:400,700', array(), 1.0 );
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Cantarell:400,700,400italic', array(), 1.0 );
 }
 
 // Replaces the excerpt "more" text by a link
