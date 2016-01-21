@@ -17,14 +17,15 @@
     $wp_customize->add_setting( 'ubuntugnome_top_logo', array(
 			'type' => 'theme_mod', // or 'option'
 			'capability' => 'edit_theme_options',
-			'transport' => 'refresh', // or postMessage
+			'transport' => 'refresh', // or postMessage,
+      'default' => sprintf( '%s/images/ug-logo-white.png', get_template_directory_uri() ),
 		) );
 
 		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'ubuntugnome_top_logo', array(
 			'label' => __( 'Header Logo Image', 'ubuntugnome' ),
-      'description' => __( 'Please use an image that is 294 x 36', 'ubuntugnome' ),
+      'description' => __( 'Please use an image that is 250 x 30', 'ubuntugnome' ),
 			'section' => 'ubuntugnome',
-			'settings'	=> 'ubuntugnome_top_logo',
+			'settings'	=> 'ubuntugnome_top_logo'
 		) ) );
 
     $wp_customize->add_setting( 'ubuntugnome_logo', array(
@@ -87,7 +88,7 @@
 
  function ubuntugnome_customize_output() {
    $styles = '';
-   if( $toplogo = get_theme_mod( 'ubuntugnome_top_logo' ) ) {
+   if( $toplogo = get_theme_mod( 'ubuntugnome_top_logo', sprintf( '%s/images/ug-logo-white.png', get_template_directory_uri() ) ) ) {
      $styles .= sprintf( '#branding .site-title a { background: url(%1$s) left center no-repeat !important;background-size: 250px 30px !important; min-height: 30px; color: transparent;}', esc_url( $toplogo ) );
    }
 

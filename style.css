@@ -876,7 +876,7 @@ img.size-full {}
 			font-size: 32px;
 			line-height: 1.2;
 			margin-bottom: 0;
-      padding: 13px 0;
+      padding: 11px 0;
 		}
 
 			#site-title a {}
@@ -1070,8 +1070,9 @@ img.size-full {}
 	border-bottom: 1px solid #e5e5e5;
 }
 	.page .entry,
-	.single .entry {
+	.singular .entry {
 		margin-bottom: 30px;
+    border-bottom: none;
 	}
 
 .sticky {
