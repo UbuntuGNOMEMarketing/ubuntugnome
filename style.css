@@ -14,6 +14,110 @@
 /**
  * Fonts - Declare @font-face here.
  * --------------------------------------------------------------------------- */
+ @font-face {
+  font-family: "ubuntu-gnome";
+  src:url("fonts/ubuntu-gnome.eot");
+  src:url("fonts/ubuntu-gnome.eot?#iefix") format("embedded-opentype"),
+    url("fonts/ubuntu-gnome.woff") format("woff"),
+    url("fonts/ubuntu-gnome.ttf") format("truetype"),
+    url("fonts/ubuntu-gnome.svg#ubuntu-gnome") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "ubuntu-gnome" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="ug-"]:before,
+[class*=" ug-"]:before {
+  font-family: "ubuntu-gnome" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ug-genericon-google-plus:before {
+  content: "\e000";
+}
+.ug-genericon-chat:before {
+  content: "\e001";
+}
+.ug-genericon-facebook-alt:before {
+  content: "\e002";
+}
+.ug-genericon-github:before {
+  content: "\e003";
+}
+.ug-genericon-user:before {
+  content: "\e004";
+}
+.ug-genericon-quote:before {
+  content: "\e005";
+}
+.ug-genericon-info:before {
+  content: "\e006";
+}
+.ug-genericon-wordpress:before {
+  content: "\e007";
+}
+.ug-genericon-heart:before {
+  content: "\e008";
+}
+.ug-genericon-lock:before {
+  content: "\e009";
+}
+.ug-genericon-ellipsis:before {
+  content: "\e00a";
+}
+.ug-genericon-home:before {
+  content: "\e00b";
+}
+.ug-genericon-twitter:before {
+  content: "\e00c";
+}
+.ug-genericon-reddit:before {
+  content: "\e00d";
+}
+.ug-genericon-youtube:before {
+  content: "\e00e";
+}
+.ug-genericon-feed:before {
+  content: "\e00f";
+}
+.ug-genericon-category:before {
+  content: "\e010";
+}
+.ug-genericons-expand:before {
+  content: "\e011";
+}
+.ug-genericon-time:before {
+  content: "\e012";
+}
+.ug-copyleft:before {
+  content: "\e013";
+}
+.ug-creative-commons:before {
+  content: "\e014";
+}
+.ug-public-domain:before {
+  content: "\e015";
+}
 
 /**
  * Defaults
