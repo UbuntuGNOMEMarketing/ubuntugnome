@@ -21,7 +21,6 @@
 
 						<div <?php hybrid_attr( 'branding' ); ?>>
 							<?php hybrid_site_title(); ?>
-							<?php hybrid_site_description(); ?>
 						</div><!-- #branding -->
 
 						<?php hybrid_get_menu( 'primary' ); // Loads the menu/secondary.php template. ?>

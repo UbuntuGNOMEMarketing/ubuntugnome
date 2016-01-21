@@ -39,7 +39,7 @@
 			'settings'	=> 'ubuntugnome_logo',
 		) ) );
 
-    $licensetext = 'Content licensed under.<div><span class="icon ug-copyleft" title="Copyleft"><span class="screen-reader-text">Copyleft</span></span><span class="icon ug-creative-commons"title="Creative Commons"><span class="screen-reader-text">Creative Commons</span></span><span class="icon ug-public-domain" title="Public Domain"><span class="screen-reader-text">Public Domain</span></span></div>';
+    $licensetext = 'Content licensed under.';
 		$wp_customize->add_setting( 'ubuntugnome_license_text', array(
 			'type' => 'theme_mod', // or 'option'
 			'capability' => 'edit_theme_options',
@@ -54,6 +54,18 @@
 			'section' => 'ubuntugnome',
       'settings' => 'ubuntugnome_license_text'
 		) );
+
+    $wp_customize->add_setting( 'ubuntugnome_license_image', array(
+			'type' => 'theme_mod', // or 'option'
+			'capability' => 'edit_theme_options',
+			'transport' => 'refresh', // or postMessage
+		) );
+
+		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'ubuntugnome_license_image', array(
+			'label' => __( 'License Image', 'ubuntugnome' ),
+			'section' => 'ubuntugnome',
+			'settings'	=> 'ubuntugnome_license_image',
+		) ) );
 
     $tmtext = 'Ubuntu is a trademark of Canonical.<br>GNOME is a trademark of the GNOME Foundation.<br>Used by permission.';
     $wp_customize->add_setting( 'ubuntugnome_trademark_text', array(
@@ -76,7 +88,7 @@
  function ubuntugnome_customize_output() {
    $styles = '';
    if( $toplogo = get_theme_mod( 'ubuntugnome_top_logo' ) ) {
-     $styles .= sprintf( '#branding { background: url(%1$s) left center no-repeat !important; text-indent: -9999px;background-size: 294px 36px !important; min-height: 36px}', esc_url( $toplogo ) );
+     $styles .= sprintf( '#branding .site-title a { background: url(%1$s) left center no-repeat !important;background-size: 250px 30px !important; min-height: 30px; color: transparent;}', esc_url( $toplogo ) );
    }
 
    echo "\n" . '<style type="text/css" id="customizer-css">' . trim( $styles ) . '</style>' . "\n";
