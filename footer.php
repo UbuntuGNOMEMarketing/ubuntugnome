@@ -8,7 +8,7 @@
 					<?php if ( get_theme_mod( 'ubuntugnome_logo' ) ) : ?>
 						<img src="<?php echo get_theme_mod( 'ubuntugnome_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
 					<?php else: ?>
-						<p>Please upload a logo under Appearance>>Customize>>Ubuntu GNOME</p>
+						<p>Please upload a logo under Appearance >> Customize >> Ubuntu GNOME</p>
 					<?php endif; ?>
 				</div>
 
@@ -16,7 +16,7 @@
 					<?php if ( get_theme_mod( 'ubuntugnome_license_text' ) ) : ?>
 						<?php echo get_theme_mod( 'ubuntugnome_license_text' ); ?>
 					<?php else: ?>
-						<p>Please set text under Appearance>>Customize>>Ubuntu GNOME</p>
+						<p>Please set text under Appearance >> Customize >> Ubuntu GNOME</p>
 					<?php endif; ?>
 				</div>
 
@@ -24,7 +24,7 @@
 					<?php if ( get_theme_mod( 'ubuntugnome_trademark_text' ) ) : ?>
 						<?php echo get_theme_mod( 'ubuntugnome_trademark_text' ); ?>
 					<?php else: ?>
-						<p>Please set text under Appearance>>Customize>>Ubuntu GNOME</p>
+						<p>Please set text under Appearance >> Customize >> Ubuntu GNOME</p>
 					<?php endif; ?>
 				</div>
 
