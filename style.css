@@ -1074,6 +1074,11 @@ img.size-full {}
 
 	.entry-summary {}
 
+		a.moretag {
+			display: block;
+			margin-top: 10px;
+		}
+
 	/* === Post Footer === */
 
 	.entry-footer {}

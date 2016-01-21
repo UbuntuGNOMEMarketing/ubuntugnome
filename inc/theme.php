@@ -16,6 +16,9 @@ add_action( 'widgets_init', 'magik_register_sidebars', 5 );
 add_action( 'wp_enqueue_scripts', 'magik_enqueue_scripts', 5 );
 add_action( 'wp_enqueue_scripts', 'magik_enqueue_styles',  5 );
 
+# Modify Read More link for excerpts
+add_filter('excerpt_more', 'ug_excerpt_more');
+
 /**
  * Registers custom image sizes for the theme.
  *
@@ -103,4 +106,10 @@ function magik_enqueue_styles() {
 
 	wp_enqueue_style( 'dashicons' );
 	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Dancing+Script|Lato:400,700', array(), 1.0 );
+}
+
+// Replaces the excerpt "more" text by a link
+function ug_excerpt_more($more) {
+       global $post;
+	return '<a class="moretag" href="'. get_permalink($post->ID) . '">[ Read More ]</a>';
 }
