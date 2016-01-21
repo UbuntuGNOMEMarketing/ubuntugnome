@@ -39,11 +39,13 @@
 			'settings'	=> 'ug_logo',
 		) ) );
 
+    $licensetext = 'Content licensed under.<div><span class="icon ug-copyleft" title="Copyleft"><span class="screen-reader-text">Copyleft</span></span><span class="icon ug-creative-commons"title="Creative Commons"><span class="screen-reader-text">Creative Commons</span></span><span class="icon ug-public-domain" title="Public Domain"><span class="screen-reader-text">Public Domain</span></span></div>';
 		$wp_customize->add_setting( 'ug_license_text', array(
 			'type' => 'theme_mod', // or 'option'
 			'capability' => 'edit_theme_options',
 			'transport' => 'refresh', // or postMessage
 			'sanitize_callback' => '',
+      'default'  => $licencetext,
 		) );
 
 		$wp_customize->add_control( 'ug_license_text', array(
@@ -53,11 +55,13 @@
       'settings' => 'ug_license_text'
 		) );
 
+    $tmtext = 'Ubuntu is a trademark of Canonical.<br>GNOME is a trademark of the GNOME Foundation.<br>Used by permission.';
     $wp_customize->add_setting( 'ug_trademark_text', array(
 			'type' => 'theme_mod', // or 'option'
 			'capability' => 'edit_theme_options',
 			'transport' => 'refresh', // or postMessage
 			'sanitize_callback' => '',
+      'default' => $tmtext
 		) );
 
 		$wp_customize->add_control( 'ug_trademark_text', array(
