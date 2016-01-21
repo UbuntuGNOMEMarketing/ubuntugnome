@@ -1094,76 +1094,6 @@ img.size-full {}
 	.comments-nav .page-numbers {}
 
 /**
- * Sidebars and widgets
- * --------------------------------------------------------------------------- */
-
-/* ====== General ====== */
-
-.sidebar {
-	font-size: 16px;
-}
-
-	.sidebar .widget {
-		background-color: #fff;
-		margin-bottom: 60px;
-		padding: 40px;
-	}
-
-	.sidebar li {
-		border-bottom: 1px dotted #ddd;
-		margin-bottom: 10px;
-		padding-bottom: 10px;
-	}
-
-	.sidebar p:last-child,
-	.sidebar ul > li:last-child {
-		margin-bottom: 0;
-	}
-		.widget ol > li {
-			list-style-position: inside;
-			list-style-type: decimal;
-			padding-left: 20px;
-			text-indent: -20px;
-		}
-
-		.widget li li {
-			border: 0;
-			margin: 0 0 0 30px;
-			padding: 0;
-		}
-
-		.widget_calendar table {
-			width: 100%;
-		}
-
-		.widget_calendar td,
-		.widget_calendar th {
-			text-align: center;
-		}
-		.widget-title {
-			font-size: 24px;
-			margin-bottom: 20px;
-			color: #999;
-		}
-
-/* ====== Specific ====== */
-
-#sidebar-primary {}
-
-#sidebar-secondary {}
-
-#sidebar-subsidiary {}
-
-#sidebar-header {}
-
-#sidebar-before-content {}
-
-#sidebar-after-content {}
-
-#sidebar-after-singular {}
-
-
-/**
  * Comments Template
  * --------------------------------------------------------------------------- */
 
@@ -1279,10 +1209,40 @@ img.size-full {}
 #footer {
 	background-color: #f2f2f2;
 	font-size: 16px;
-	padding: 40px 5%;
-	text-align: center;
+	padding: 60px 0;
 	box-shadow: inset 0 1px 0 1px #d9d9d9;
+	color: #787878;
 }
+
+	#footer .footer-section {
+		display: inline-block;
+		margin-right: 3.75%;
+		text-align: left;
+		position: relative;
+		float: left;
+		overflow: hidden;
+		font-size: 15px;
+	}
+
+	#footer .footer-section:last-of-type {
+		margin-right: 0;
+	}
+
+	#footer .footer-1 {
+		width: 10.625%;
+	}
+
+	#footer .footer-2 {
+		width: 16.65%;
+	}
+
+	#footer .footer-3 {
+		width: 34.375%;
+	}
+
+	#footer .footer-4 {
+		width: 27.05%;
+	}
 
 	#footer .copyright {}
 

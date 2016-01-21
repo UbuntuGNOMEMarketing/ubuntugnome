@@ -37,6 +37,7 @@ require_once( $magik_dir . 'library/hybrid.php'        );
 require_once( $magik_dir . 'inc/custom-background.php' );
 require_once( $magik_dir . 'inc/custom-header.php'     );
 require_once( $magik_dir . 'inc/theme.php'             );
+require_once( $magik_dir . 'inc/customizer.php'             );
 
 // Launch the Hybrid Core framework.
 new Hybrid();
