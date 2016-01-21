@@ -10,7 +10,7 @@
 	<div id="container">
 
 		<div class="skip-link">
-			<a href="#content" class="screen-reader-text"><?php esc_html_e( 'Skip to content', 'magik' ); ?></a>
+			<a href="#content" class="screen-reader-text"><?php esc_html_e( 'Skip to content', 'ubuntugnome' ); ?></a>
 		</div><!-- .skip-link -->
 
 			<div class="header-image-container">

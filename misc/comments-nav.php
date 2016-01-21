@@ -2,16 +2,16 @@
 
 	<nav class="comments-nav" role="navigation" aria-labelledby="comments-nav-title">
 
-		<h3 id="comments-nav-title" class="screen-reader-text"><?php esc_html_e( 'Comments Navigation', 'magik' ); ?></h3>
+		<h3 id="comments-nav-title" class="screen-reader-text"><?php esc_html_e( 'Comments Navigation', 'ubuntugnome' ); ?></h3>
 
-		<?php previous_comments_link( esc_html_x( '&larr; Previous', 'comments navigation', 'magik' ) ); ?>
+		<?php previous_comments_link( esc_html_x( '&larr; Previous', 'comments navigation', 'ubuntugnome' ) ); ?>
 
 		<span class="page-numbers"><?php 
 			// Translators: Comments page numbers. 1 is current page and 2 is total pages.
-			printf( esc_html__( 'Page %1$s of %2$s', 'magik' ), get_query_var( 'cpage' ) ? absint( get_query_var( 'cpage' ) ) : 1, get_comment_pages_count() );
+			printf( esc_html__( 'Page %1$s of %2$s', 'ubuntugnome' ), get_query_var( 'cpage' ) ? absint( get_query_var( 'cpage' ) ) : 1, get_comment_pages_count() );
 		?></span>
 
-		<?php next_comments_link( esc_html_x( 'Next &rarr;', 'comments navigation', 'magik' ) ); ?>
+		<?php next_comments_link( esc_html_x( 'Next &rarr;', 'comments navigation', 'ubuntugnome' ) ); ?>
 
 	</nav><!-- .comments-nav -->
 

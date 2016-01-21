@@ -1,7 +1,7 @@
 <?php
 
 # Call late so child themes can override.
-add_action( 'after_setup_theme', 'magik_custom_header_setup', 15 );
+add_action( 'after_setup_theme', 'ubuntugnome_custom_header_setup', 15 );
 
 /**
  * Adds support for the WordPress 'custom-header' theme feature and registers custom headers.
@@ -10,7 +10,7 @@ add_action( 'after_setup_theme', 'magik_custom_header_setup', 15 );
  * @access public
  * @return void
  */
-function magik_custom_header_setup() {
+function ubuntugnome_custom_header_setup() {
 
 	add_theme_support(
 		'custom-header',
@@ -22,7 +22,7 @@ function magik_custom_header_setup() {
 			'flex-height'            => true,
 			'header-text'            => false,
 			'uploads'                => true,
-			'wp-head-callback'       => 'magik_custom_header_wp_head'
+			'wp-head-callback'       => 'ubuntugnome_custom_header_wp_head'
 		)
 	);
 
@@ -37,7 +37,7 @@ function magik_custom_header_setup() {
  * @access public
  * @return void
  */
-function magik_custom_header_wp_head() {
+function ubuntugnome_custom_header_wp_head() {
 
 	$header_image = get_header_image();
 

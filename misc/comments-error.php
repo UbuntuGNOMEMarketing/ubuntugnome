@@ -3,14 +3,14 @@
 	<p class="comments-closed pings-open">
 		<?php
 			// Translators: The two %s are placeholders for HTML. The order can't be changed.
-			printf( esc_html__( 'Comments are closed, but %strackbacks%s and pingbacks are open.', 'magik' ), '<a href="' . esc_url( get_trackback_url() ) . '">', '</a>' );
+			printf( esc_html__( 'Comments are closed, but %strackbacks%s and pingbacks are open.', 'ubuntugnome' ), '<a href="' . esc_url( get_trackback_url() ) . '">', '</a>' );
 		?>
 	</p><!-- .comments-closed .pings-open -->
 
 <?php elseif ( ! comments_open() ) : ?>
 
 	<p class="comments-closed">
-		<?php esc_html_e( 'Comments are closed.', 'magik' ); ?>
+		<?php esc_html_e( 'Comments are closed.', 'ubuntugnome' ); ?>
 	</p><!-- .comments-closed -->
 
 <?php endif; ?>
