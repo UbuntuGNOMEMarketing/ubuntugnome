@@ -892,7 +892,11 @@ img.size-full {}
  * Menus
  * --------------------------------------------------------------------------- */
 
-.menu-toggle {}
+.menu-toggle {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
 
 .menu {
 	font-size: 14px;
@@ -1064,7 +1068,7 @@ img.size-full {}
 /* ====== POSTS ====== */
 
 .entry  {
-	padding: 60px 0 80px;
+  padding: 60px 0;
 	margin-bottom: 20px;
 	background-color: transparent;
 	border-bottom: 1px solid #e5e5e5;
@@ -1086,6 +1090,9 @@ img.size-full {}
 .entry-footer {
 	max-width: 980px;
 	margin: 0 auto;
+  padding-left: 6%;
+  padding-right: 6%;
+  box-sizing: border-box;
 }
 
 	/* === Post Header === */
@@ -1555,14 +1562,85 @@ img.size-full {}
 	}
 }
 @media only screen and ( max-width: 981px) {
-
-  .entry-header,
-  .entry-summary,
-  .entry-content,
-  .entry-footer {
-  	padding-left: 3%;
-    padding-right: 3%;
+  #branding,
+  #menu-primary {
+    display: block;
+    width: 100%;
   }
+
+
+  .menu-toggle {
+    position: fixed;
+    display: block;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    margin: 17px 15px 0 0;
+    padding: 0 0 15px 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+
+    body.admin-bar .menu-toggle {
+      top: 42px;
+    }
+    .menu-toggle::before {
+      font-size: 28px;
+    }
+
+  .menu-toggle.open {
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease-in-out;
+  }
+
+
+  #menu-primary .wrap {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.8);
+    transform: translate3d(0, -100%, 0);
+    -webkit-ransform: translate3d(0, -100%, 0);
+    -moz-ransform: translate3d(0, -100%, 0);
+    -webkit-transition: 350ms ease all;
+    -moz-transition: 350ms ease all;
+    transition: 350ms ease all;
+  }
+
+  #menu-primary .wrap.open {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: 350ms ease all;
+    -moz-transition: 350ms ease all;
+    transition: 350ms ease all;
+  }
+
+  #menu-primary ul {
+    display: block;
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    width: 100%;
+    transform: translate3d(0, -50%,0);
+  }
+
+    #menu-primary ul li {
+      display: block;
+      margin: 0 15% 8px;
+    }
+
+      #menu-primary ul li a {
+        background: rgba(0,0,0,0.3);
+        border-radius: 4px;
+        padding: 8px;
+      }
+
 }
 
 @media only screen and ( max-width: 768px) {

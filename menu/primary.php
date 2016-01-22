@@ -2,6 +2,8 @@
 
 	<nav <?php hybrid_attr( 'menu', 'primary' ); ?>>
 
+		<div class="genericon genericon-menu menu-toggle"><span class="screen-reader-text">Menu</span></div>
+
 		<?php wp_nav_menu(
 			array(
 				'theme_location'  => 'primary',

@@ -89,7 +89,7 @@
  function ubuntugnome_customize_output() {
    $styles = '';
    if( $toplogo = get_theme_mod( 'ubuntugnome_top_logo', sprintf( '%s/images/ug-logo-white.png', get_template_directory_uri() ) ) ) {
-     $styles .= sprintf( '#branding .site-title a { background: url(%1$s) left center no-repeat !important;background-size: 250px 30px !important; min-height: 30px; color: transparent;}', esc_url( $toplogo ) );
+     $styles .= sprintf( '#branding .site-title a { background: url(%1$s) left center no-repeat !important;background-size: 250px 30px; min-height: 30px; color: transparent;}', esc_url( $toplogo ) );
    }
 
    echo "\n" . '<style type="text/css" id="customizer-css">' . trim( $styles ) . '</style>' . "\n";

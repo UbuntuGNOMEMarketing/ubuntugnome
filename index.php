@@ -24,7 +24,7 @@
 
 		<?php endwhile; // End found posts loop. ?>
 
-		<?php locate_template( array( 'misc/loop-nav.php' ), true ); // Loads the misc/loop-nav.php template. ?>
+		<?php //locate_template( array( 'misc/loop-nav.php' ), true ); // Loads the misc/loop-nav.php template. ?>
 
 	<?php else : // If no posts were found. ?>
 
