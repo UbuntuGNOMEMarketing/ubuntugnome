@@ -616,7 +616,6 @@ form {}
 		cursor: pointer;
 		font-size: 16px;
 		font-weight: 800;
-		letter-spacing: 0.5px;
 		padding: 16px 24px;
 		text-transform: uppercase;
 		width: auto;
@@ -1524,7 +1523,7 @@ img.size-full {}
 
 	#footer .footer-section {
 		display: inline-block;
-		margin-right: 3.75%;
+		margin-right: 3.6%;
 		text-align: left;
 		position: relative;
 		float: left;
@@ -1547,7 +1546,7 @@ img.size-full {}
 		}
 
 	#footer .footer-3 {
-		width: 35.375%;
+		width: auto;
 	}
 
 	#footer .footer-4 {
