@@ -1613,6 +1613,7 @@ img.size-full {}
 
 
   #menu-primary .wrap {
+    z-index: 999;
     visibility: hidden;
     position: fixed;
     top: 0;
