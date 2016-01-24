@@ -17,7 +17,7 @@
 					$licensetext = 'Content licensed under.';
 					echo get_theme_mod( 'ubuntugnome_license_text', $licensetext );
 					?><br />
-					<img src="<?php echo get_theme_mod( 'ubuntugnome_license_image', true ); ?>" alt="Copyleft, Creative commons, Public domain" />
+					<img class="icons" src="<?php echo get_theme_mod( 'ubuntugnome_license_image', true ); ?>" alt="Copyleft, Creative commons, Public domain" />
 				</div>
 
 				<div class="ubuntugnome_trademark footer-section footer-3">
