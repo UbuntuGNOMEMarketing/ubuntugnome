@@ -1121,14 +1121,14 @@ img.size-full {}
 /* ====== POSTS ====== */
 
 .entry  {
-  padding: 60px 0;
+  padding: 40px 0;
 	margin-bottom: 20px;
 	background-color: transparent;
 	border-bottom: 1px solid #e5e5e5;
 }
 	.page .entry,
 	.singular .entry {
-		margin-bottom: 30px;
+		margin-bottom: 0;
     border-bottom: none;
     border-bottom: none;
 	}
@@ -1415,6 +1415,7 @@ img.size-full {}
 
 #comments-template {
   border-top: 1px solid #e5e5e5;
+  padding: 20px 0 40px;
 }
 
 /* ====== COMMENTS ======= */
@@ -1442,7 +1443,8 @@ img.size-full {}
 		/* === Individual comments */
 
 		li.comment {
-			border-bottom: 3px solid #efefef;
+			border: 3px solid #efefef;
+      border-width: 0 0 3px 3px;
 			margin: 18px 0;
 			padding: 20px;
 		}
