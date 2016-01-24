@@ -884,7 +884,8 @@ img.size-full {}
         .entry-summary,
         .entry-content,
         .entry-footer,
-        #comments-template {
+        #comments,
+        #respond {
         	max-width: 980px;
         	margin: 0 auto;
           padding-left: 6%;
@@ -1412,7 +1413,9 @@ img.size-full {}
  * Comments Template
  * --------------------------------------------------------------------------- */
 
-#comments-template {}
+#comments-template {
+  border-top: 1px solid #e5e5e5;
+}
 
 /* ====== COMMENTS ======= */
 
