@@ -880,6 +880,18 @@ img.size-full {}
 				margin: 0 auto;
 			}
 
+        .entry-header,
+        .entry-summary,
+        .entry-content,
+        .entry-footer,
+        #comments-template {
+        	max-width: 980px;
+        	margin: 0 auto;
+          padding-left: 6%;
+          padding-right: 6%;
+          box-sizing: border-box;
+        }
+
 		#footer {}
 
 /**
@@ -1123,17 +1135,6 @@ img.size-full {}
 .sticky {
 	background: #fafafa;
 	box-shadow: inset 0 0 0 2px rgba(0,0,0,0.3);
-}
-
-.entry-header,
-.entry-summary,
-.entry-content,
-.entry-footer {
-	max-width: 980px;
-	margin: 0 auto;
-  padding-left: 6%;
-  padding-right: 6%;
-  box-sizing: border-box;
 }
 
 	/* === Post Header === */
@@ -1590,7 +1591,7 @@ img.size-full {}
   .menu-toggle {
     position: fixed;
     display: block;
-    z-index: 3;
+    z-index: 9;
     top: 0;
     right: 0;
     margin: 17px 15px 0 0;
@@ -1613,7 +1614,7 @@ img.size-full {}
 
 
   #menu-primary .wrap {
-    z-index: 999;
+    z-index: 8;
     visibility: hidden;
     position: fixed;
     top: 0;
