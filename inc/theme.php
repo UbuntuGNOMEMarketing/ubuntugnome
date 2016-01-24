@@ -106,7 +106,7 @@ function ubuntugnome_enqueue_styles() {
 	// Load active theme stylesheet.
 	wp_enqueue_style( 'hybrid-style' );
 
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic', array(), 1.0 );
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic,800', array(), 1.0 );
 }
 
 // Replaces the excerpt "more" text by a link
