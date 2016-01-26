@@ -41,6 +41,9 @@ function ubuntugnome_custom_header_wp_head() {
 
 	$header_image = get_header_image();
 
-	$image = array( 'src' => $header_image );
-	wp_localize_script( 'ug-backstretch-set', 'BackStretchImg', $image );
+	//$image = array( 'src' => $header_image );
+	//wp_localize_script( 'ug-backstretch-set', 'BackStretchImg', $image );
+
+	$style = sprintf(".header-image-container { background: url(%s) center center no-repeat; background-size: cover; }", $header_image );
+	echo "\n" . '<style type="text/css" id="custom-header-css">' . trim( $style ) . '</style>' . "\n";
 }
