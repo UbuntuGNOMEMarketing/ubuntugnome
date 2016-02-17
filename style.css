@@ -1104,7 +1104,7 @@ img.size-full {}
 				.menu-social li a {
 					color: #787878;
 					padding: 0;
-					margin-right: 10px;
+					margin-left: 10px;
 				}
 
 				.menu-social li a::before {
