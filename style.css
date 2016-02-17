@@ -851,12 +851,12 @@ img.size-full {}
 			padding: 60px 0 0;
 		}
 
-	  #main a {
-		position: relative;
-	  }
+	#main a {
+	position: relative;
+	}
 
-	  #main a::not(.button)::after {
-		order-radius: 3px;
+	#main a:not(.button)::after {
+		border-radius: 3px;
 		position: absolute;
 		top: 85%;
 		left: 0px;
@@ -867,17 +867,17 @@ img.size-full {}
 		opacity: 0;
 		transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
 		transform: translateY(10px);
-	  }
-	  #main a:hover,
-	  #main a:focus {
+	}
+	#main a:hover,
+	#main a:focus {
 
-	  }
+	}
 
-	  #main a::not(.button):hover::after,
-	  #main a::not(.button):focus::after {
-		opacity: 0.7;
-		transform: translateY(5px);
-	  }
+		#main a:not(.button):hover::after,
+		#main a:not(.button):focus::after {
+			opacity: 0.7;
+			transform: translateY(5px);
+		}
 
 			.layout-1c .content {
 				width: 100%;
