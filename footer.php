@@ -9,7 +9,7 @@
 					$licensetext = 'Content licensed under.';
 					echo get_theme_mod( 'ubuntugnome_license_text', $licensetext );
 					?>
-					<?php hybrid_get_menu( 'secondary' ); // Loads the menu/secondary.php template. ?>
+					<?php hybrid_get_menu( 'footer' ); // Loads the menu/secondary.php template. ?>
 				</div>
 
 				<div class="ubuntugnome_social footer-section footer-2">
