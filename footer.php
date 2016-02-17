@@ -13,7 +13,7 @@
 				</div>
 
 				<div class="ubuntugnome_social footer-section footer-2">
-					<?php hybrid_get_menu( 'subsidiary' ); // Loads the menu/secondary.php template. ?>
+					<?php hybrid_get_menu( 'social' ); // Loads the menu/secondary.php template. ?>
 				</div>
 
 			</div>

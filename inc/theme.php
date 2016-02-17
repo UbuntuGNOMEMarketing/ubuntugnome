@@ -40,9 +40,9 @@ function ubuntugnome_register_image_sizes() {
  * @return void
  */
 function ubuntugnome_register_menus() {
-	register_nav_menu( 'primary',    esc_html_x( 'Primary', 'nav menu location', 'ubuntugnome' ) );
-	register_nav_menu( 'subsidiary',  esc_html_x( 'Social', 'nav menu location', 'ubuntugnome' ) );
-	register_nav_menu( 'subsidiary',  esc_html_x( 'Footer', 'nav menu location', 'ubuntugnome' ) );
+	register_nav_menu( 'primary',    esc_html_x( 'Primary',    'nav menu location', 'ubuntugnome' ) );
+	register_nav_menu( 'social',  esc_html_x( 'Social',        'nav menu location', 'ubuntugnome' ) );
+	register_nav_menu( 'footer',  esc_html_x( 'Footer',        'nav menu location', 'ubuntugnome' ) );
 }
 
 /**
