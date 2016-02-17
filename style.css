@@ -893,9 +893,7 @@ img.size-full {}
 		#respond {
 			max-width: 980px;
 			margin: 0 auto;
-		  padding-left: 6%;
-		  padding-right: 6%;
-		  box-sizing: border-box;
+			box-sizing: border-box;
 		}
 
 		#footer {}
