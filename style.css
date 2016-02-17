@@ -1057,14 +1057,17 @@ img.size-full {}
 					color: #787878;
 					padding: 0 5px 0 0;
 					font-size: 14px;
-					font-weight: normal
+					font-weight: normal;
+					display: inline;
 				}
 				#menu-footer li:not(:last-child)::after {
 					content: '/';
-					padding: 0 2px;
+					padding: 0 3px;
 					color: #787878;
+					display: inline;
 				}
-				#menu-footer li a:hover {
+				#menu-footer li a:hover,
+				#menu-footer li:hover a {
 					border-bottom: 1px solid rgba(0,0,0,0.5);
 					text-decoration: none;
 				}
