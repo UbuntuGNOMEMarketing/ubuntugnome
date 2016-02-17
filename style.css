@@ -1171,10 +1171,10 @@ img.size-full {}
 	border-bottom: none;
 	}
 
-	.plural .entry::first-of-type {
+	.plural .entry:first-of-type {
 		margin-top: 20px;
 	}
-	.plural .entry::last-of-type {
+	.plural .entry:last-of-type {
 		margin-bottom: 0;
 		border-bottom: none;
 	}
