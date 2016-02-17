@@ -1055,11 +1055,16 @@ img.size-full {}
 
 				#menu-footer li a {
 					color: #787878;
-					padding: 6px 8px;
+					padding: 0 5px 0 0;
 					font-size: 14px;
+					font-weight: normal
 				}
-				#menu-footer li a:hover,
-				#menu-footer li:hover > a {
+				#menu-footer li::not(:last-child)::after {
+					content: '\8226';
+					padding: 0 2px;
+					color: #787878;
+				}
+				#menu-footer li a:hover {
 					border-bottom: 1px solid rgba(0,0,0,0.5);
 				}
 
