@@ -1207,6 +1207,11 @@ img.size-full {}
 			.entry-byline a {
 				color: #b2b2b2;
 			}
+
+			.entry-byline a:not(.button)::after {
+				background: #b2b2b2;
+				height: 0.03em;
+			}
 			.entry-byline a:hover {}
 
 			.entry-terms {
