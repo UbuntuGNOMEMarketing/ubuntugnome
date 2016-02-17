@@ -894,6 +894,8 @@ img.size-full {}
 			max-width: 980px;
 			margin: 0 auto;
 			box-sizing: border-box;
+			padding-left: 6%;
+			padding-right: 6%;
 		}
 
 		#footer {}
