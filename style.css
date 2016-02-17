@@ -1208,9 +1208,9 @@ img.size-full {}
 				color: #b2b2b2;
 			}
 
-			.entry-byline a:not(.button)::after {
+			#main .entry-byline a:not(.button)::after {
 				background-color: #b2b2b2;
-				height: 0.03em;
+				height: 0.06rem;
 			}
 			.entry-byline a:hover {}
 
