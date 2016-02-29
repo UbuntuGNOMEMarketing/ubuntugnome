@@ -1,19 +1,15 @@
 (function($){
-  $('.menu-toggle').click(function(){
+  jQuery( window ).resize(
+		function() {
+			var width = jQuery( window ).width();
 
-  	if( $(this).hasClass('genericon-menu') ) {
-
-  		$('#menu-primary .wrap').addClass('open');
-  		$(this).removeClass('genericon-menu').addClass('genericon-close-alt');
-
-  	} else {
-
-  		$('#menu-primary .wrap').removeClass('open');
-  		$(this).removeClass('genericon-close-alt').addClass('genericon-menu');
-
-  	}
-
-  	return false;
-
-  });
+			if ( 980 <= width ) {
+        jQuery( '.menu > .wrap' ).fadeIn();
+				//jQuery( '.menu-toggle' ).removeClass( 'active' )
+			} else {
+        jQuery( '.menu > .wrap' ).hide();
+				//jQuery( '.menu > .wrap:visible' ).parent().children( '.menu-toggle' ).addClass( 'active' );
+			}
+		}
+	);
 })(jQuery);
