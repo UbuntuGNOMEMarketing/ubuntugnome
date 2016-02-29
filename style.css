@@ -1628,12 +1628,12 @@ img.size-full {}
 }
 @media only screen and ( max-width: 981px) {
   #header {
-    padding-left: 0;
-    padding-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   #branding {
     min-width: 250px;
-    float: left
+    float: left;
   }
 
     .site-title {
