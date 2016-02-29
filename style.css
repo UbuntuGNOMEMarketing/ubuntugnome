@@ -1686,13 +1686,13 @@ img.size-full {}
 
 	#menu-primary .menu-toggle button::before,
 	#menu-secondary .menu-toggle button::after {
-		content:        '\f333';
+		content:        '\f419';
 		display:        inline-block;
-		font-family:    'dashicons';
+		font-family:    'Genericons';
 		font-size:      24px;
 		vertical-align: middle;
 		-webkit-font-smoothing: antialiased;
-		line-height: 24px;
+    line-height: 1;
 	}
 
 
@@ -1706,7 +1706,8 @@ img.size-full {}
     border-radius: 5px;
     box-shadow: 0 0 4px rgba(0,0,0,0.5);
     border: 1px solid rgba(0,0,0,0.6);
-		right: 3%;
+		right: 2%;
+    margin-left: 2%;
     z-index: 99;
 	}
 
