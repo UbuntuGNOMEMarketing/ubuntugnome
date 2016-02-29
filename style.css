@@ -1778,11 +1778,21 @@ img.size-full {}
 		displat: block;
 	}
 
-	.footer-widgets .sidebar-footer-1,
-	.footer-widgets .sidebar-footer-2 {
-		border-bottom: 1px dashed #f9f9f9;
-		margin-bottom: 30px;
+  #footer {
+    text-align: center;
+  }
+
+	.footer-section {
+		width: 100%;
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
 	}
+
+  #footer .menu,
+  #footer .menu ul {
+    text-align: center;
+  }
 }
 
 
