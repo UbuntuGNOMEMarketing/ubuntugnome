@@ -1782,7 +1782,8 @@ img.size-full {}
     text-align: center;
   }
 
-	.footer-section {
+	#footer .footer-section {
+    display: block;
 		width: 100%;
     float: none;
     text-align: center;
