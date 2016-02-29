@@ -2,7 +2,9 @@
 
 	<nav <?php hybrid_attr( 'menu', 'primary' ); ?>>
 
-		<div class="genericon genericon-menu menu-toggle"><span class="screen-reader-text">Menu</span></div>
+		<h3 id="menu-primary-title" class="menu-toggle">
+			<button><span class="screen-reader-text"><?php echo hybrid_get_menu_name( 'primary' ); ?></span></button>
+		</h3><!-- .menu-toggle -->
 
 		<?php wp_nav_menu(
 			array(
