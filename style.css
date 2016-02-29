@@ -978,7 +978,8 @@ img.size-full {}
 					display: block;
 				}
 				.menu li a:hover,
-				.menu li:hover > a {
+				.menu li:hover > a,
+        .menu li a:focus {
 					text-decoration: underline;
 				}
 
