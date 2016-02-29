@@ -852,7 +852,8 @@ img.size-full {}
 		}
 
 	#main a {
-	position: relative;
+	   position: relative;
+     word-wrap: break-word;
 	}
 
 	#main a:not(.button)::after {
