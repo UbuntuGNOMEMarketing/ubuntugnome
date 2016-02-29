@@ -341,6 +341,21 @@ a {
 
 	}
 
+  /* Skip link at the top of the page. */
+  .skip-link .screen-reader-text:focus {
+  	z-index:     100;
+  	top:         34px;
+  	width:       200px;
+  	padding:     0.75rem 0;
+  	text-align:  center;
+  }
+  	.ltr .skip-link .screen-reader-text:focus { left: 50%;  margin-left:  -100px; }
+  	.rtl .skip-link .screen-reader-text:focus { right: 50%; margin-right: -100px; }
+
+  	@media screen and ( max-width: 782px ) {
+  		.skip-link .screen-reader-text:focus { top: 48px; }
+  	}
+
 
 /* === Headers === */
 
