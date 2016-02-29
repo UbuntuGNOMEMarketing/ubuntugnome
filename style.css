@@ -348,14 +348,17 @@ a {
   	width:       200px;
   	padding:     0.75rem 0;
   	text-align:  center;
+    background: #393f3f;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    border: 1px solid rgba(0,0,0,0.6);
   }
-  	.ltr .skip-link .screen-reader-text:focus { left: 50%;  margin-left:  -100px; }
-  	.rtl .skip-link .screen-reader-text:focus { right: 50%; margin-right: -100px; }
+  	.ltr .skip-link .screen-reader-text:focus { left: 0; }
+  	.rtl .skip-link .screen-reader-text:focus { right: 0; }
 
-  	@media screen and ( max-width: 782px ) {
+    @media screen and ( max-width: 782px ) {
   		.skip-link .screen-reader-text:focus { top: 48px; }
   	}
-
 
 /* === Headers === */
 
