@@ -874,19 +874,6 @@ img.size-full {}
 		 word-wrap: break-word;
 	}
 
-	#main a:not(.button)::after {
-		border-radius: 3px;
-		position: absolute;
-		top: 85%;
-		left: 0px;
-		width: 100%;
-		height: 0.1rem;
-		background: #0087ed;
-		content: "";
-		opacity: 0;
-		transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
-		transform: translateY(10px);
-	}
 	#main a:hover,
 	#main a:focus {
 
@@ -1275,10 +1262,6 @@ img.size-full {}
 				color: #b2b2b2;
 			}
 
-			#main .entry-byline a:not(.button)::after {
-				background-color: #b2b2b2;
-				height: 0.06rem;
-			}
 			.entry-byline a:hover {}
 
 			.entry-terms {
@@ -1667,7 +1650,8 @@ img.size-full {}
     }
 
     #footer .footer-widget li {
-      margin-bottom: 5px;
+      margin-bottom: 10px;
+      display: block;
     }
 
 
