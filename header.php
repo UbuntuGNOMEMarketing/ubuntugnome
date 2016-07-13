@@ -13,20 +13,24 @@
 			<a href="#content" class="screen-reader-text"><?php esc_html_e( 'Skip to content', 'ubuntugnome' ); ?></a>
 		</div><!-- .skip-link -->
 
+		<header <?php hybrid_attr( 'header' ); ?>>
+
+			<div class="wrap">
+
+				<div <?php hybrid_attr( 'branding' ); ?>>
+					<?php ubuntugnome_the_site_logo(); ?>
+					<?php hybrid_site_title(); ?>
+					<?php hybrid_site_description(); ?>
+				</div><!-- #branding -->
+
+				<?php hybrid_get_menu( 'primary' ); // Loads the menu/secondary.php template. ?>
+
+			</div><!-- wrap -->
+		</header><!-- #header -->
+
 			<div class="header-image-container">
 
-				<header <?php hybrid_attr( 'header' ); ?>>
 
-					<div class="wrap">
-
-						<div <?php hybrid_attr( 'branding' ); ?>>
-							<?php hybrid_site_title(); ?>
-						</div><!-- #branding -->
-
-						<?php hybrid_get_menu( 'primary' ); // Loads the menu/secondary.php template. ?>
-
-					</div><!-- wrap -->
-				</header><!-- #header -->
 
 			</div> <!-- .header-image-container -->
 

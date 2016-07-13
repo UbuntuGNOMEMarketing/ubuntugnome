@@ -2,20 +2,10 @@
 
 		<footer <?php hybrid_attr( 'footer' ); ?>>
 
-			<div class="wrap">
+			<?php hybrid_get_sidebar( 'footer' ); // Loads the sidebar/subsidiary.php template. ?>
 
-				<div class="ubuntugnome_licence footer-section footer-1">
-					<?php
-					$licensetext = 'Content licensed under.';
-					echo get_theme_mod( 'ubuntugnome_license_text', $licensetext );
-					?>
-					<?php hybrid_get_menu( 'footer' ); // Loads the menu/secondary.php template. ?>
-				</div>
-
-				<div class="ubuntugnome_social footer-section footer-2">
-					<?php hybrid_get_menu( 'social' ); // Loads the menu/secondary.php template. ?>
-				</div>
-
+			<div class="ubuntugnome_social">
+				<?php hybrid_get_menu( 'social' ); // Loads the menu/secondary.php template. ?>
 			</div>
 
 		</footer><!-- #footer -->

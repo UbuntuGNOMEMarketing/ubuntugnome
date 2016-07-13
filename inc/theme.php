@@ -30,6 +30,7 @@ function ubuntugnome_register_image_sizes() {
 
 	// Sets the 'post-thumbnail' size.
 	//set_post_thumbnail_size( 150, 150, true );
+	
 }
 
 /**
@@ -65,6 +66,36 @@ function ubuntugnome_register_layouts() {
  * @return void
  */
 function ubuntugnome_register_sidebars() {
+
+	hybrid_register_sidebar(
+		array(
+			'id'          => 'footer-1',
+			'name'        => esc_html_x( 'Footer 1', 'sidebar', 'magik' ),
+			'description' => esc_html__( 'Add sidebar description.', 'magik' )
+		)
+	);
+	hybrid_register_sidebar(
+		array(
+			'id'          => 'footer-2',
+			'name'        => esc_html_x( 'Footer 2', 'sidebar', 'magik' ),
+			'description' => esc_html__( 'Add sidebar description.', 'magik' )
+		)
+	);
+	hybrid_register_sidebar(
+		array(
+			'id'          => 'footer-3',
+			'name'        => esc_html_x( 'Footer 3', 'sidebar', 'magik' ),
+			'description' => esc_html__( 'Add sidebar description.', 'magik' )
+		)
+	);
+
+	hybrid_register_sidebar(
+		array(
+			'id'          => 'footer-4',
+			'name'        => esc_html_x( 'Footer 4', 'sidebar', 'magik' ),
+			'description' => esc_html__( 'Add sidebar description.', 'magik' )
+		)
+	);
 
 }
 
@@ -110,5 +141,16 @@ function ubuntugnome_enqueue_styles() {
 // Replaces the excerpt "more" text by a link
 function ubuntugnome_excerpt_more($more) {
 	   global $post;
-	return '<a class="moretag" href="'. get_permalink($post->ID) . '">[ Read More ]</a>';
+	return '<div class="moretag"><a href="'. get_permalink($post->ID) . '">[ Read More ]</a></div>';
+}
+
+/**
+ * Return early if Site Logo is not available.
+ */
+function ubuntugnome_the_site_logo() {
+	if ( ! function_exists( 'the_custom_logo' ) ) {
+		return;
+	} else {
+		the_custom_logo();
+	}
 }

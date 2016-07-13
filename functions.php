@@ -61,6 +61,13 @@ function ubuntugnome_theme_setup() {
 		array( 'aside', 'audio', 'chat', 'image', 'gallery', 'link', 'quote', 'status', 'video' )
 	);
 
+	// WordPress Custom Logo
+	add_theme_support( 'custom-logo', array(
+		'width' => 100,
+		'height' => 100,
+		'header-text' => array( 'site-title', 'site-description' ),
+	) );
+
 	// Handle content width for embeds and images.
 	hybrid_set_content_width( 1280 );
 }

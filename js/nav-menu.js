@@ -12,4 +12,12 @@
 			}
 		}
 	);
+
+  /* Menu focus. */
+		jQuery( '.menu li a' ).on( 'focus', function() {
+			jQuery( this ).parents().addClass( 'focus' );
+		}).on( 'blur', function() {
+				jQuery( this ).parents().removeClass( 'focus' );
+			}
+		);
 })(jQuery);
