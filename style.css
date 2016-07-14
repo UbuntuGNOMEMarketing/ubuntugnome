@@ -1759,7 +1759,7 @@ img.size-full {}
 		position: absolute;
 		display: none;
 		margin-top: 4px;
-		padding: 20px;
+		padding: 0px;
 		background: #393f3f;
 		border-radius: 5px;
 		box-shadow: 0 0 4px rgba(0,0,0,0.5);
@@ -1795,9 +1795,9 @@ img.size-full {}
 
 	#menu-primary li a,
 	#menu-secondary li a {
-		padding: 16px 36px;
+		padding: 8px 16px;
 		color: #ffffff;
-		border-radius: 4px;
+		border-radius: 0px;
 	}
 
 	#menu-primary li a:hover,
@@ -1805,6 +1805,7 @@ img.size-full {}
 	#menu-primary li.current-menu-item a {
 		color: #fff;
 		background: rgba(255,255,255,0.1);
+    box-shadow: none;
 	}
 
 	#menu-primary .sub-menu,
