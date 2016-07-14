@@ -870,8 +870,8 @@ img.size-full {}
 		}
 
 	#main a {
-		 position: relative;
-		 word-wrap: break-word;
+    position: relative;
+    word-wrap: break-word;
 	}
 
 	#main a:hover,
@@ -906,6 +906,17 @@ img.size-full {}
 		}
 
 		#footer {}
+
+  .page-template-empty .entry,
+  .page-template-empty .entry-content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .page-template-empty .entry-header,
+  .page-template-empty .entry-footer {
+    display: none;
+  }
 
 /**
  * Header
